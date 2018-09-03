@@ -467,7 +467,7 @@ Child all:
 `;
 
 exports[`StatsTestCases should print correct stats for chunk-module-id-range 1`] = `
-"Hash: f83394b6c7c86ff77e2b
+"Hash: 990f7c8116eb5c738714
 Time: Xms
 Built at: Thu Jan 01 1970 00:00:00 GMT
    Asset      Size  Chunks             Chunk Names
@@ -477,18 +477,18 @@ Entrypoint main1 = main1.js
 Entrypoint main2 = main2.js
 chunk    {0} main2.js (main2) 136 bytes [entry] [rendered]
     > ./main2 main2
-   [0] ./e.js 20 bytes {0} [built]
-   [1] ./f.js 20 bytes {0} [built]
-   [2] ./main2.js 56 bytes {0} [built]
+   [0] ./d.js 20 bytes {0} {1} [built]
+   [1] ./e.js 20 bytes {0} [built]
+   [2] ./f.js 20 bytes {0} [built]
+   [3] ./main2.js 56 bytes {0} [built]
  [101] ./a.js 20 bytes {0} {1} [built]
- [102] ./d.js 20 bytes {0} {1} [built]
 chunk    {1} main1.js (main1) 136 bytes [entry] [rendered]
     > ./main1 main1
-   [3] ./b.js 20 bytes {1} [built]
+   [0] ./d.js 20 bytes {0} {1} [built]
    [4] ./c.js 20 bytes {1} [built]
  [100] ./main1.js 56 bytes {1} [built]
  [101] ./a.js 20 bytes {0} {1} [built]
- [102] ./d.js 20 bytes {0} {1} [built]"
+ [102] ./b.js 20 bytes {1} [built]"
 `;
 
 exports[`StatsTestCases should print correct stats for chunks 1`] = `
